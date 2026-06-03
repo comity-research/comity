@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite it as below."
+title: "comity: a GraphQL lens on firm engagement with open source communities of practice"
+abstract: >-
+  comity reads firm engagement signals from the GitHub GraphQL API and returns a
+  structured view of how firms participate in open source communities of practice
+  and how those communities recognise that participation. The schema models three
+  primitives: Contributor, Engagement, and Standing.
+authors:
+  - family-names: Tabbal
+    given-names: Maroun
+    name-suffix: ""
+    orcid: "https://orcid.org/0009-0004-2484-765X"
+    affiliation: "Centre for Architecture Education (CCAE), University College Cork (UCC)"
+    email: "maroun.tabbal@ucc.ie"
+    # Canonical form: Maroun Tabbal. Aliases also in use: Maroun C. Tabbal,
+    # Mc Tabbal (matches @ccae-lab profile name and the dissertation CLAUDE.md
+    # candidate field), Maroon Tabbal. Use the canonical form everywhere except
+    # where an alias has already taken hold in a fixed external record.
+type: software
+version: 0.1.0
+date-released: 2026-06-03
+license: Apache-2.0
+repository-code: "https://github.com/comity-research/comity"
+url: "https://github.com/comity-research/comity"
+keywords:
+  - open-source-governance
+  - communities-of-practice
+  - graphql
+  - github-api
+  - firm-engagement
+  - research-software

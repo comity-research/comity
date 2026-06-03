@@ -1,0 +1,18 @@
+# Code owners for comity
+# Format: <path pattern>  @<github-handle>
+#
+# CODEOWNERS works when this file lives in .github/, docs/, or the repo root.
+# This file is at the repo root.
+
+# Default owner for everything in the repo
+*               @ccae-lab
+
+# Schema and data model: extra-careful review needed
+schema/         @ccae-lab
+src/affiliation/ @ccae-lab
+
+# Docs and citation metadata
+README.md       @ccae-lab
+CITATION.cff    @ccae-lab
+NOTICE          @ccae-lab
+LICENSE         @ccae-lab
