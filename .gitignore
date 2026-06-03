@@ -1,47 +1,47 @@
-# Secrets and local config
+# --- Node / TypeScript / Next.js ---
+**/node_modules/
+.next/
+**/.next/
+.cache/
+.build/
+**/.build/
+dist/
+out/
+target/
+*.tsbuildinfo
+*.nfs*
+
+# --- Yarn ---
+**/.yarn/
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+!**/.yarn/cache
+**/.yarn/build-state.yml
+**/.yarn/install-state.gz
+
+# --- Environment and secrets ---
 .env
 .env.*
 !.env.example
+!.env.sample
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
 *.pem
 *.key
 secrets/
 .secrets/
 
-# Node / TypeScript
-node_modules/
-dist/
-build/
-.next/
-.nuxt/
-.cache/
-coverage/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-.npm/
-.yarn/
+# --- Prisma local state ---
+prisma/.env
+nextjs_space/prisma/.env
+.backup_schema.prisma
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-.Python
-*.egg-info/
-.eggs/
-build/
-dist/
-.venv/
-venv/
-env/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# Editors and OS
+# --- Editors and OS ---
 .vscode/
 .idea/
 *.swp
@@ -49,11 +49,28 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Local data and runs
-data/
-*.sqlite
-*.sqlite3
-*.db
-provenance/local/
-runs/
-tmp/
+# --- Logs and runtime artefacts ---
+.logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Abacus.AI platform files (do not commit) ---
+.abacus.donotdelete
+.project_instructions.md
+.deploy/
+
+# --- Roadmap binaries (keep .md only) ---
+ROADMAP.docx
+ROADMAP.pdf
+
+# --- Python (for any utility scripts) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
